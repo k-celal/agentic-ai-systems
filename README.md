@@ -229,12 +229,6 @@ MCP, agent'ların **dış dünya ile konuşma protokolü**dür.
 
 ---
 
-## 📄 Lisans
-
-Bu proje MIT lisansı ile lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakın.
-
----
-
 ## ⭐ Bu Repo İşinize Yaradıysa
 
 Bir **yıldız** ⭐ bırakmayı unutmayın! Daha fazla kişinin bu kaynağa ulaşmasına yardımcı olur.
