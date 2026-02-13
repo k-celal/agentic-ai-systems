@@ -112,20 +112,7 @@ Her modül bir öncekinin üzerine inşa eder. Sırayla ilerlemenizi öneririz.
 
 ---
 
-### Capstone: Production Agent
-
-**Kazanımlar:**
-- Tüm kavramları birleştirme
-- Production-ready mimari
-- Gerçek dünya senaryosu
-
-**Proje:** Test Automation AI Assistant
-- UI test akışı planlama
-- Tool'lar: runner, snapshot, selector
-- Eval ve maliyet optimizasyonu
-
-**Ön Koşul:** Tüm modüller
-
+### Capstone: Eklenecek
 ---
 
 ## 🎯 Modüller Arası Bağlantılar
