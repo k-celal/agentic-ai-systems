@@ -75,7 +75,7 @@ agentic-ai-systems/
 ### 1. Repoyu Klonlayın
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/agentic-ai-systems.git
+git clone https://github.com/k-celal/agentic-ai-systems.git
 cd agentic-ai-systems
 ```
 
