@@ -33,7 +33,7 @@ Agent Temelleri    →    Reflection      →    Tool Use & MCP
                     Module 5: Multi-Agent
                     (Takım Çalışması)
                               │
-                    🏁 Capstone: Production Agent
+                    🏁 Capstone: TwinGraph Studio
                     (Hepsini Birleştir)
 ```
 
@@ -48,7 +48,7 @@ agentic-ai-systems/
 ├── .env.example                       ← API key ayarları
 │
 ├── docs/                              ← 📚 Genel dökümanlar
-│   ├── 00-roadmap.md                  ← Öğrenme yol haritası
+│   ├── 00-roadmaps.md                  ← Öğrenme yol haritası
 │   ├── 01-concepts-map.md             ← Kavram haritası
 │   ├── 02-glossary.md                 ← Terimler sözlüğü
 │   └── 03-evals-and-metrics.md        ← Değerlendirme rehberi
@@ -65,7 +65,7 @@ agentic-ai-systems/
 ├── module-04-evals-and-optimization/  ← 📊 Değerlendirme & Optimizasyon
 ├── module-05-multi-agent/             ← 🤖 Çoklu Agent Sistemleri
 │
-└── capstone-production-agent/         ← 🏁 Final Projesi
+└── capstone-production-agent/         ← 🏁 TwinGraph Studio (Final Projesi)
 ```
 
 ---
