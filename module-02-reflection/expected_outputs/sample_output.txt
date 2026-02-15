@@ -1,0 +1,88 @@
+============================================================
+🪞 Module 2: Reflective Agent + Validation Tool
+============================================================
+
+────────────────────────────────────────────────────────────
+📋 Demo 1: Basit Self-Reflection
+────────────────────────────────────────────────────────────
+==================================================
+🪞 Reflection Döngüsü Başlatılıyor
+   Görev: Python'da bir liste sıralama fonksiyonu yaz...
+   Max iterasyon: 2
+   Kalite eşiği: 7/10
+==================================================
+
+────────────────────────────────
+📝 İterasyon 1: İlk Üretim
+   Üretilen: def sort(lst): return sorted(lst)...
+
+────────────────────────────────
+🔄 İterasyon 1: Eleştiri ve İyileştirme
+🔍 İçerik eleştiriliyor...
+   📊 Puan: 4/10
+   ❌ Docstring eksik
+   ❌ Type hint yok
+   ❌ Hata yönetimi yok
+   💡 Type hint ekleyin: def sort(lst: list) -> list
+   💡 Docstring ekleyin
+   💡 try-except ile hata yönetimi ekleyin
+   ✏️ İçerik güncellendi (380 karakter)
+
+────────────────────────────────
+🔄 İterasyon 2: Eleştiri ve İyileştirme
+🔍 İçerik eleştiriliyor...
+   📊 Puan: 8/10
+   💡 Edge case testleri eklenebilir
+
+✅ Kalite eşiği aşıldı! (8/7)
+
+==================================================
+📊 Reflection Özet Raporu
+==================================================
+Görev:       Python'da bir liste sıralama fonksiyonu yaz...
+Durum:       completed
+Son Puan:    8/10
+İterasyon:   2
+Token:       1,250
+Tahmini Maliyet: $0.000188
+==================================================
+
+📝 Son Versiyon:
+def sort_list(lst: list) -> list:
+    """Listeyi küçükten büyüğe sıralar.
+    
+    Args:
+        lst: Sıralanacak liste
+    
+    Returns:
+        Sıralanmış yeni liste
+    
+    Raises:
+        TypeError: Girdi liste değilse
+    
+    Examples:
+        >>> sort_list([3, 1, 2])
+        [1, 2, 3]
+    """
+    if not isinstance(lst, list):
+        raise TypeError("Girdi bir liste olmalıdır")
+    return sorted(lst)
+
+────────────────────────────────────────────────────────────
+📊 Maliyet Karşılaştırması
+────────────────────────────────────────────────────────────
+
+Demo 1 (Self-Reflection):
+  İterasyon: 2
+  Token: 1,250
+  Puan: 8/10
+
+Demo 2 (Reflection + Validation):
+  İterasyon: 3
+  Token: 2,100
+  Puan: 9/10
+
+💡 Reflection ekstra maliyet ekler ama kaliteyi artırır.
+
+🎉 Module 2 tamamlandı!
+   Sonraki: module-03-tools-and-mcp
