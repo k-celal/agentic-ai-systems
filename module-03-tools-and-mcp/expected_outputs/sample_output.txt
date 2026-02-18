@@ -1,0 +1,33 @@
+============================================================
+🛠️ Module 3: MCP Server Demo
+============================================================
+
+📋 Kayıtlı Tool'lar (6):
+   search@v1.0: Veritabanında basit metin araması yapar...
+   search@v2.0: Veritabanında gelişmiş arama yapar...
+   file_write@v1.0: Sanal dosya sistemine dosya yazar...
+   file_read@v1.0: Sanal dosya sisteminden dosya okur...
+   execute_code@v1.0: Python kodunu güvenli sandbox'ta çalıştırır...
+
+────────────────────────────────────────
+🔍 Search v1: Basit arama
+   3 sonuç bulundu
+
+🔍 Search v2: Gelişmiş arama
+   2/3 sonuç (tutorial kategorisi, max 2)
+
+📁 File Write & Read
+   Dosya içeriği: Merhaba MCP!
+
+💻 Code Execution
+   Çıktı: Fibonacci: [1, 1, 2, 3, 5, 8, 13]
+
+📊 Tool Registry İstatistikleri
+═══════════════════════════════════
+Toplam Tool:    6
+Toplam Çağrı:   5
+Toplam Hata:    0
+Başarı Oranı:   100.0%
+═══════════════════════════════════
+
+✅ Demo tamamlandı!
