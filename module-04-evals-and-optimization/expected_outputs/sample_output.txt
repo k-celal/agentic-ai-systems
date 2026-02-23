@@ -1,0 +1,191 @@
+============================================================
+📊 Module 4: Evals & Optimization Demo Çıktısı
+============================================================
+
+════════════════════════════════════════════════
+Bölüm 1: E2E Değerlendirme
+════════════════════════════════════════════════
+
+▶ Eval çalışıyor: weather_basic — 'İstanbul'da hava nasıl?'
+  ✓ BAŞARILI | skor=1.00 | süre=0.001s | maliyet=$0.000125
+▶ Eval çalışıyor: search_python — 'Python hakkında bilgi ara'
+  ✓ BAŞARILI | skor=1.00 | süre=0.001s | maliyet=$0.000150
+▶ Eval çalışıyor: calc_fibonacci — 'Fibonacci(10) hesapla'
+  ✓ BAŞARILI | skor=1.00 | süre=0.001s | maliyet=$0.000123
+▶ Eval çalışıyor: file_save — 'Sonuçları dosyaya kaydet'
+  ✓ BAŞARILI | skor=1.00 | süre=0.001s | maliyet=$0.000081
+▶ Eval çalışıyor: general_question — "Python'un avantajları nelerdir?"
+  ✓ BAŞARILI | skor=0.80 | süre=0.001s | maliyet=$0.000090
+
+=================================================================
+📊 E2E DEĞERLENDİRME RAPORU
+=================================================================
+
+Vaka ID              Durum        Skor     Süre       Maliyet
+-----------------------------------------------------------------
+weather_basic        ✅ Başarılı  1.00     0.001s     $0.000125
+search_python        ✅ Başarılı  1.00     0.001s     $0.000150
+calc_fibonacci       ✅ Başarılı  1.00     0.001s     $0.000123
+file_save            ✅ Başarılı  1.00     0.001s     $0.000081
+general_question     ✅ Başarılı  0.80     0.001s     $0.000090
+
+=================================================================
+📈 TOPLU İSTATİSTİKLER
+=================================================================
+  Toplam Vaka:        5
+  Başarılı:           5 (100%)
+  Başarısız:          0 (0%)
+  Ortalama Skor:      0.96
+  Ortalama Süre:      0.001s
+  Toplam Maliyet:     $0.000569
+
+
+════════════════════════════════════════════════
+Bölüm 2: Planner Değerlendirmesi
+════════════════════════════════════════════════
+
+============================================================
+📋 PLANNER DEĞERLENDİRME RAPORU
+============================================================
+
+Vaka ID                   Eşleşme         Skor       Süre
+------------------------------------------------------------
+fibonacci_and_save        3/3             ✅ 1.00    0.001s
+simple_search             2/2             ✅ 1.00    0.001s
+search_and_summarize      3/3             ✅ 1.00    0.001s
+read_and_analyze          3/3             ✅ 1.00    0.001s
+simple_calculation        2/2             ✅ 1.00    0.001s
+
+  Toplam Vaka:    5
+  Başarılı:       5/5 (100%)
+  Ortalama Skor:  1.00
+
+
+════════════════════════════════════════════════
+Bölüm 3: Tool Seçim Değerlendirmesi
+════════════════════════════════════════════════
+
+=================================================================
+🔧 TOOL SEÇİM DEĞERLENDİRME RAPORU
+=================================================================
+
+Vaka ID                Beklenen          Gerçek            Sonuç
+-----------------------------------------------------------------
+search_basic           search            search            ✅
+search_find            search            search            ✅
+read_config            file_read         file_read         ✅
+read_log               file_read         file_read         ✅
+write_result           file_write        file_write        ✅
+calc_fibonacci         execute_code      execute_code      ✅
+run_code               execute_code      execute_code      ✅
+weather_istanbul       get_weather       get_weather       ✅
+weather_temp           get_weather       get_weather       ✅
+ambiguous_file         search            search            ✅
+
+  Toplam Test:     10
+  Doğru Seçim:     10 (100%)
+  Doğruluk Oranı:  100.00%
+
+
+════════════════════════════════════════════════
+Bölüm 4: Model Yönlendirme
+════════════════════════════════════════════════
+
+Görev                                                            Model           Skor
+------------------------------------------------------------------------------------------
+Merhaba, nasılsın?                                               gpt-4o-mini     0
+Python nedir?                                                    gpt-4o-mini     0
+Teşekkürler!                                                     gpt-4o-mini     0
+Python'da liste ve tuple arasındaki farkı açıkla                 gpt-4o-mini     2
+Bir for döngüsü ile FizzBuzz çözümü yaz                         gpt-4o-mini     3
+Bu kodu refactor et, performans analizi yap ve sonra birim...    gpt-4o          9
+Mikroservis mimarisini tasarla, adım adım API endpointler...    gpt-4o          9
+Mevcut veritabanı şemasını analiz et, optimizasyon öneril...    gpt-4o          8
+
+==================================================
+🔀 Model Yönlendirme İstatistikleri
+==================================================
+  Toplam Yönlendirme:    8
+  gpt-4o-mini            5 (63%)
+  gpt-4o                 3 (38%)
+==================================================
+
+
+════════════════════════════════════════════════
+Bölüm 5: CostGuard Demo
+════════════════════════════════════════════════
+
+💰 CostGuard: bütçe=$0.005, çağrı_limiti=$0.002
+
+  Çağrı # 1: maliyet=$0.000090 | toplam=$0.000090 | kalan=$0.004910 | %1.8
+  Çağrı # 2: maliyet=$0.000116 | toplam=$0.000206 | kalan=$0.004794 | %4.1
+  ...
+  Çağrı # 8: maliyet=$0.000271 | toplam=$0.001563 | kalan=$0.003437 | %31.3
+  ...
+  Çağrı #15: maliyet=$0.000452 | toplam=$0.003628 | kalan=$0.001372 | %72.6
+           → ⚠️ Bütçe uyarısı: %72.6 kullanıldı
+  ...
+  Çağrı #18: maliyet=$0.000530 | toplam=$0.005102 | kalan=$0.000000 | %102.0
+           → 🛑 BÜTÇE AŞILDI!
+  Çağrı #19: ENGELLENDİ — Bütçe aşıldı!
+
+
+════════════════════════════════════════════════
+Bölüm 6: Bağlam Sıkıştırma
+════════════════════════════════════════════════
+
+📝 Orijinal: 11 mesaj, ~650 token
+
+Strateji 1: Kırpma (Truncation)
+  Sonuç: 4 mesaj, ~120 token
+  Tasarruf: 530 token (%82)
+
+Strateji 2: Özetleme (Summarization)
+  Sonuç: 5 mesaj, ~180 token
+  Tasarruf: 470 token (%72)
+
+
+════════════════════════════════════════════════
+Bölüm 7: İzleme (Tracing)
+════════════════════════════════════════════════
+
+═══════════════════════════════════════════════════════
+📍 İZLEME RAPORU: Hava durumunu öğren ve dosyaya kaydet
+═══════════════════════════════════════════════════════
+
+  Adım 1 [0.1s] 🧠 DÜŞÜNME
+    İçerik:  Hava durumunu öğrenmek için get_weather tool'unu çağırmalıyım
+    Token:   300
+    Maliyet: $0.0020
+
+  Adım 2 [0.3s] 🔧 TOOL_ÇAĞRISI
+    İçerik:  get_weather(city='Istanbul')
+    Süre:    1.20s
+    Meta:    {'tool': 'get_weather', 'args': {'city': 'Istanbul'}}
+
+  Adım 3 [0.4s] 📥 TOOL_SONUCU
+    İçerik:  {"temp": 15, "condition": "güneşli", "wind": "10 km/s"}
+
+  Adım 4 [0.5s] 🧠 DÜŞÜNME
+    İçerik:  Sonucu dosyaya kaydetmem gerekiyor
+    Token:   200
+    Maliyet: $0.0010
+
+  Adım 5 [0.6s] 🔧 TOOL_ÇAĞRISI
+    İçerik:  file_write(path='hava.txt', content='İstanbul: 15°C, güneşli')
+    Süre:    0.10s
+
+  Adım 6 [0.7s] 💬 CEVAP
+    İçerik:  İstanbul'da hava 15°C ve güneşli. Sonuç hava.txt dosyasına kaydedildi.
+    Token:   100
+    Maliyet: $0.0010
+
+───────────────────────────────────────────────────────
+  Durum:        ✅ Başarılı
+  Toplam Süre:  0.72s
+  Toplam Token: 600
+  Toplam Maliyet: $0.0040
+  Adım Sayısı: 6
+═══════════════════════════════════════════════════════
+
+✅ Tüm demolar tamamlandı!
