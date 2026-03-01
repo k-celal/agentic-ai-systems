@@ -1,0 +1,207 @@
+============================================================
+🤝 Module 5: Multi-Agent Sistemi
+============================================================
+
+🤖 Agent'lar oluşturuluyor...
+   Agent'lar hazır:
+   - Görev Planlayıcı (planner)
+   - Araştırmacı (researcher)
+   - Eleştirmen (critic)
+   - Sentezci (synthesizer)
+
+🎼 Orkestratör oluşturuluyor...
+   Orkestratör hazır!
+
+────────────────────────────────────────────────────────────
+📋 Demo Görev: Yapay zeka ve eğitim hakkında bir araştırma raporu hazırla
+────────────────────────────────────────────────────────────
+
+Pipeline: Planner → Researcher → Critic → Synthesizer
+
+══════════════════════════════════════════════════════════════
+🚀 Pipeline başlatılıyor: Yapay zeka ve eğitim hakkında bir araştırma raporu haz...
+══════════════════════════════════════════════════════════════
+
+──────────────────────────────────────────────────
+📍 Adım 1/4: Görev Planlayıcı (planner)
+──────────────────────────────────────────────────
+📋 Görev planlanıyor: Yapay zeka ve eğitim hakkında bir araştırma raporu hazırla...
+🧠 planner düşünüyor...
+💬 planner cevap verdi (342 karakter)
+📨 [14:30:01] planner → researcher (plan): PLAN:
+1. Yapay zekanın eğitimdeki mevcut uygulamaları...
+✅ Görev Planlayıcı tamamlandı (342 karakter)
+
+──────────────────────────────────────────────────
+📍 Adım 2/4: Araştırmacı (researcher)
+──────────────────────────────────────────────────
+🔍 Araştırma başlıyor...
+🧠 researcher düşünüyor...
+💬 researcher cevap verdi (1456 karakter)
+📨 [14:30:04] researcher → critic (research): ARAŞTIRMA BULGULARI:
+## Yapay Zekanın Eğitimdeki Mevcut Uygulamaları...
+✅ Araştırmacı tamamlandı (1456 karakter)
+
+──────────────────────────────────────────────────
+📍 Adım 3/4: Eleştirmen (critic)
+──────────────────────────────────────────────────
+🔎 İçerik eleştiriliyor...
+🧠 critic düşünüyor...
+💬 critic cevap verdi (892 karakter)
+📨 [14:30:06] critic → synthesizer (critique): ELEŞTİRİ RAPORU:
+## Güçlü Yönler
+- Konu çeşitliliği iyi, ana başlıklar...
+✅ Eleştirmen tamamlandı (892 karakter)
+
+──────────────────────────────────────────────────
+📍 Adım 4/4: Sentezci (synthesizer)
+──────────────────────────────────────────────────
+📝 Sentez başlıyor...
+🧠 synthesizer düşünüyor...
+💬 synthesizer cevap verdi (2134 karakter)
+📨 [14:30:09] synthesizer → son_çıktı (synthesis): # Yapay Zeka ve Eğitim: Kapsamlı Bir Araştırma R...
+✅ Sentezci tamamlandı (2134 karakter)
+
+══════════════════════════════════════════════════════════════
+📊 PİPELINE SONUCU
+══════════════════════════════════════════════════════════════
+   Görev: Yapay zeka ve eğitim hakkında bir araştırma raporu haz...
+   Başarılı: ✅ Evet
+   Süre: 9.47 saniye
+   Toplam mesaj: 5
+   Çalışan agent'lar: ['planner', 'researcher', 'critic', 'synthesizer']
+   Çıktı uzunluğu: 2134 karakter
+══════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════
+📨 AGENT MESAJ GEÇMİŞİ
+══════════════════════════════════════════════════════════════
+
+📋 Mesaj 1:
+   Gönderen: kullanıcı
+   Alan:     planner
+   Tip:      task
+   Zaman:    14:30:00
+   İçerik:   Yapay zeka ve eğitim hakkında bir araştırma raporu hazırla...
+
+📝 Mesaj 2:
+   Gönderen: planner
+   Alan:     researcher
+   Tip:      plan
+   Zaman:    14:30:01
+   İçerik:   PLAN:
+             1. Yapay zekanın eğitimdeki mevcut uygulamalarını araştır - Gerekli bilgi: Güncel örnekler ve...
+
+🔍 Mesaj 3:
+   Gönderen: researcher
+   Alan:     critic
+   Tip:      research
+   Zaman:    14:30:04
+   İçerik:   ARAŞTIRMA BULGULARI:
+
+             ## Yapay Zekanın Eğitimdeki Mevcut Uygulamaları
+             Yapay zeka, eğitim sektöründe birçok alanda aktif olarak kullan...
+
+🔎 Mesaj 4:
+   Gönderen: critic
+   Alan:     synthesizer
+   Tip:      critique
+   Zaman:    14:30:06
+   İçerik:   ELEŞTİRİ RAPORU:
+
+             ## Güçlü Yönler
+             - Konu çeşitliliği iyi, üç temel alan kapsanmış
+             - Somut örnekler verilmiş (Khan Acade...
+
+📄 Mesaj 5:
+   Gönderen: synthesizer
+   Alan:     son_çıktı
+   Tip:      synthesis
+   Zaman:    14:30:09
+   İçerik:   # Yapay Zeka ve Eğitim: Kapsamlı Bir Araştırma Raporu
+
+             ## Giriş
+             Yapay zeka teknolojisi, eğitim sek...
+
+══════════════════════════════════════════════════════════════
+📄 SON RAPOR
+══════════════════════════════════════════════════════════════
+
+# Yapay Zeka ve Eğitim: Kapsamlı Bir Araştırma Raporu
+
+## Giriş
+
+Yapay zeka teknolojisi, eğitim sektöründe köklü bir dönüşüm
+başlatmıştır. Bu rapor, yapay zekanın eğitimdeki mevcut uygulamalarını,
+kişiselleştirilmiş öğrenme sistemlerini ve gelecekteki trendleri
+kapsamlı bir şekilde ele almaktadır.
+
+## 1. Yapay Zekanın Eğitimdeki Mevcut Uygulamaları
+
+Yapay zeka, eğitim alanında çeşitli şekillerde kullanılmaktadır:
+
+- **Adaptif Öğrenme Platformları:** Khan Academy, Duolingo gibi
+  platformlar AI kullanarak her öğrencinin seviyesine uygun içerik sunar.
+  Öğrenci zorlandığında sistem otomatik olarak konuyu farklı bir
+  açıdan anlatır.
+
+- **Otomatik Değerlendirme:** Çoktan seçmeli sınavlardan açık uçlu
+  soruların değerlendirilmesine kadar, AI öğretmenlerin iş yükünü
+  önemli ölçüde azaltmaktadır.
+
+- **Chatbot Asistanlar:** 7/24 öğrenci desteği sağlayan AI chatbot'lar,
+  sık sorulan soruları yanıtlayarak öğretmenlere zaman kazandırır.
+
+## 2. Kişiselleştirilmiş Öğrenme
+
+AI destekli kişiselleştirilmiş öğrenme sistemleri, her öğrencinin
+benzersiz öğrenme stilini, hızını ve ihtiyaçlarını analiz eder:
+
+- **Öğrenci Profilleme:** Sistem, öğrencinin güçlü ve zayıf yönlerini
+  belirleyerek kişiye özel müfredat oluşturur.
+
+- **Dinamik İçerik Adaptasyonu:** Öğrenci ilerledikçe zorluk seviyesi
+  otomatik olarak ayarlanır.
+
+- **Erken Uyarı Sistemleri:** Başarısızlık riski taşıyan öğrenciler
+  erken aşamada tespit edilir ve müdahale edilir.
+
+## 3. Gelecek Trendleri ve Zorluklar
+
+### Trendler:
+- Sanal gerçeklik (VR) ile AI birleşimi ile immersif öğrenme deneyimleri
+- Doğal dil işleme ile daha etkili dil öğrenme araçları
+- Yaratıcı AI ile otomatik ders içeriği oluşturma
+
+### Zorluklar:
+- Veri gizliliği ve öğrenci verilerinin korunması
+- Eşitsizlik: Teknolojiye erişim farkları
+- Öğretmen-AI iş birliği dengesi
+
+## Sonuç ve Değerlendirme
+
+Yapay zeka, eğitimi daha kişisel, erişilebilir ve etkili hale
+getirme potansiyeline sahiptir. Ancak bu dönüşümün başarılı olması
+için teknolojik gelişmelerin yanında etik kurallar, veri güvenliği
+ve eşit erişim konularına da dikkat edilmelidir.
+
+══════════════════════════════════════════════════════════════
+📊 GENEL RAPOR
+══════════════════════════════════════════════════════════════
+   Görev:             Yapay zeka ve eğitim hakkında bir araştırma raporu hazırla
+   Başarılı:          ✅ Evet
+   Toplam süre:       9.47 saniye
+   Toplam mesaj:      5
+   Çalışan agent'lar: ['planner', 'researcher', 'critic', 'synthesizer']
+   Çıktı uzunluğu:   2134 karakter
+
+   Agent Çıktı Boyutları:
+   - planner: 342 karakter
+   - researcher: 1456 karakter
+   - critic: 892 karakter
+   - synthesizer: 2134 karakter
+
+══════════════════════════════════════════════════════════════
+🎉 Module 5 demo tamamlandı!
+   Alıştırmalar için: exercises/exercises.md
+══════════════════════════════════════════════════════════════
