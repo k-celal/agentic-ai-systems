@@ -1,0 +1,253 @@
+╔══════════════════════════════════════════════════════════════════════╗
+║          TwinGraph Studio — Pipeline Çalıştırma Çıktısı            ║
+║          Konu: "Agentic AI ve MCP"                                 ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+$ python run.py --topic "Agentic AI ve MCP"
+
+══════════════════════════════════════════════════════════════
+🚀 Pipeline başlatılıyor | Konu: Agentic AI ve MCP
+══════════════════════════════════════════════════════════════
+
+[Orchestrator]  TwinGraph Studio v1.0 başlatılıyor...
+[Orchestrator]  Bütçe: $1.000000 | Reflection eşiği: 7.0 | Maks döngü: 3
+[CostGuard]     CostGuardAgent başlatıldı | Bütçe: $1.0000 | Uyarı eşiği: %80
+
+────────────────────────────────────────
+📚 ADIM 1: Hafıza Sistemi Başlatma
+────────────────────────────────────────
+
+[GraphStore]    GraphStore başlatıldı: 56 düğüm, 73 kenar yüklendi
+[VectorStore]   VectorStore başlatıldı: 37 belge yüklendi
+
+[GraphStore]    Graf sorgusu: 'Agentic AI'
+[GraphStore]    Sorgu sonucu: 'Agentic AI' — 12 ilişkili düğüm, 15 kenar
+                → AI Agent (uses, hop=1)
+                → LLM (uses, hop=1)
+                → MCP (uses, hop=1)
+                → Tool Calling (uses, hop=1)
+                → Agent Loop (uses, hop=1)
+                → Multi-Agent (related_to, hop=2)
+                → Reflection (may_include, hop=2)
+                → Orchestration (coordinates, hop=2)
+
+[VectorStore]   Vektör araması: 'Agentic AI MCP agent tool protocol'
+                1. [0.3125] MCP (Model Context Protocol), Anthropic tarafından...
+                2. [0.2857] AI Agent, kullanıcı talimatlarını anlayan ve otonom...
+                3. [0.2500] Agentic AI sistemleri, geleneksel chatbot'lardan...
+                4. [0.2143] Tool calling, LLM'in metin üretmenin ötesinde...
+                5. [0.1875] Agent loop (agent döngüsü), LLM tabanlı agent'ların...
+
+────────────────────────────────────────
+📚 ADIM 2: Derin Araştırma
+────────────────────────────────────────
+
+[Research]      Deep research başlatıldı: 'Agentic AI ve MCP'
+[Research]      Anahtar kelimeler: ['agentic', 'agent', 'mcp', 'protokol']
+
+[deep_research] Araştırma tamamlandı: 8 sonuç bulundu, 5 döndürüldü
+                1. [0.875] Yapay Zeka Ajanları: Otonom Sistemlerin Yükselişi
+                   Kaynak: https://arastirma.twingraph.dev/ai-agents-rehberi
+                2. [0.812] Model Context Protocol (MCP): LLM Araç Standartı
+                   Kaynak: https://arastirma.twingraph.dev/mcp-protokolu
+                3. [0.625] Çok Ajanlı Sistemler: Orkestrasyon ve İş Birliği
+                   Kaynak: https://arastirma.twingraph.dev/cok-ajanli-sistemler
+                4. [0.500] Yansıma Kalıbı: Ajanların Öz-Değerlendirmesi
+                   Kaynak: https://arastirma.twingraph.dev/yansima-kalibi
+                5. [0.437] AI Ajan Değerlendirmesi: Metrikler ve Optimizasyon
+                   Kaynak: https://arastirma.twingraph.dev/degerlendirme-rehberi
+
+[Research]      Kaynakça oluşturuldu: 5 kaynak
+[Research]      Kullanım: 1,850 token (input: 950, output: 900)
+[CostGuard]     Kullanım kaydı | Agent: research_agent | Token: 950+900 | Model: gpt-4o-mini | Maliyet: $0.000683
+
+✅ Araştırma tamamlandı | Kaynak: 5 | Kaynakça: 5 | Token: 1,850
+
+────────────────────────────────────────
+✍️  ADIM 3: Yazım & Reflection Döngüsü
+────────────────────────────────────────
+
+--- Taslak v1 ---
+
+[Writing]       Taslak v1 oluşturuluyor...
+[Writing]       Model: gpt-4o | Sıcaklık: 0.8
+[Writing]       Hafıza bağlamı: 12 ilişkili kavram, 5 benzer belge
+[Writing]       Araştırma bağlamı: 5 kaynak, 5 kaynakça
+
+[Writing]       Taslak v1 hazır:
+                  Başlık: "Agentic AI ve MCP: Yapay Zeka Ajanlarının Yeni Çağı"
+                  Kelime sayısı: 1,250
+                  Paragraf sayısı: 8
+                  Kaynakça: 5 referans
+
+[CostGuard]     Kullanım kaydı | Agent: writing_agent | Token: 1500+1900 | Model: gpt-4o | Maliyet: $0.022750
+
+✅ Taslak v1 oluşturuldu | 1,250 kelime | 3,400 token
+
+--- Reflection v1 ---
+
+[Reflection]    Kalite değerlendirmesi başlatıldı...
+[Reflection]    Model: gpt-4o-mini | Sıcaklık: 0.2
+
+[eval_tool]     Yazı değerlendirmesi:
+                  Kelime Sayısı:          7.5/10 (ağırlık: %20)
+                  Cümle Çeşitliliği:      5.0/10 (ağırlık: %25)
+                  Paragraf Yapısı:        7.0/10 (ağırlık: %20)
+                  Anahtar Kelime Yoğunluğu: 6.0/10 (ağırlık: %15)
+                  Okunabilirlik:          6.0/10 (ağırlık: %20)
+
+[Reflection]    Genel Puan: 6.1/10 (D notu)
+                Sorunlar:
+                  - Cümle uzunlukları çok tekdüze
+                  - Bazı paragraflarda tekrarlayan ifadeler var
+                  - Örnekler ve somut kullanım senaryoları eksik
+                Öneriler:
+                  - Kısa ve uzun cümleleri karıştırarak daha dinamik bir ritim oluşturun
+                  - Gerçek dünya kullanım örnekleri ekleyin
+                  - Kod snippetları ile teknik kavramları destekleyin
+
+[CostGuard]     Kullanım kaydı | Agent: reflection_agent | Token: 700+500 | Model: gpt-4o-mini | Maliyet: $0.000405
+
+📊 Puan: 6.1/10 | Kabul: ❌ (eşik: 7.0)
+🔄 İyileştirme gerekli. Sorun: 3 | Öneri: 3
+
+--- Taslak v2 ---
+
+[Writing]       Taslak v2 iyileştiriliyor...
+[Writing]       Geri bildirim uygulanıyor: 3 sorun, 3 öneri
+[Writing]       Cümle çeşitliliği artırılıyor...
+[Writing]       Örnekler ve kod snippetları ekleniyor...
+
+[Writing]       Taslak v2 hazır:
+                  Kelime sayısı: 1,480 (+230 kelime)
+                  Paragraf sayısı: 10 (+2 paragraf)
+                  Yeni eklenen: 2 kod örneği, 3 somut senaryo
+
+[CostGuard]     Kullanım kaydı | Agent: writing_agent | Token: 1800+2100 | Model: gpt-4o | Maliyet: $0.025500
+
+✅ Taslak v2 oluşturuldu | 1,480 kelime | 3,900 token
+
+--- Reflection v2 ---
+
+[Reflection]    Kalite değerlendirmesi başlatıldı...
+
+[eval_tool]     Yazı değerlendirmesi:
+                  Kelime Sayısı:          8.5/10 (ağırlık: %20)
+                  Cümle Çeşitliliği:      7.5/10 (ağırlık: %25)
+                  Paragraf Yapısı:        8.0/10 (ağırlık: %20)
+                  Anahtar Kelime Yoğunluğu: 7.0/10 (ağırlık: %15)
+                  Okunabilirlik:          8.0/10 (ağırlık: %20)
+
+[Reflection]    Genel Puan: 7.8/10 (B notu)
+                İyileşme: +1.7 puan (6.1 → 7.8)
+                Durum: Kabul edildi ✅
+
+[CostGuard]     Kullanım kaydı | Agent: reflection_agent | Token: 750+550 | Model: gpt-4o-mini | Maliyet: $0.000443
+
+📊 Puan: 7.8/10 | Kabul: ✅
+✅ Makale kabul edildi! Devam ediliyor.
+
+────────────────────────────────────────
+🔄 ADIM 4: LinkedIn'e Dönüştürme
+────────────────────────────────────────
+
+[Repurpose]     LinkedIn postu oluşturuluyor...
+[Repurpose]     Model: gpt-4o-mini | Sıcaklık: 0.7
+[Repurpose]     Kaynak makale: 1,480 kelime → hedef: 200-300 kelime
+
+[Repurpose]     LinkedIn postu hazır:
+                  Kelime sayısı: 280
+                  Hook: "Yapay zeka artık sadece soru-cevap yapmıyor..."
+                  Değer maddeleri: 4
+                  CTA: "Siz de AI agent'lar ile neler yapıyorsunuz?"
+                  Hashtag: 5
+
+[CostGuard]     Kullanım kaydı | Agent: repurpose_agent | Token: 600+450 | Model: gpt-4o-mini | Maliyet: $0.000360
+
+✅ LinkedIn postu hazır | 280 kelime | 1,050 token
+
+────────────────────────────────────────
+💾 ADIM 5: İçerik Kaydetme
+────────────────────────────────────────
+
+[content_save]  İçerik kaydedildi: medium_article.md (5,820 karakter, 1,480 kelime)
+[content_save]  İçerik kaydedildi: linkedin_post.txt (1,120 karakter, 280 kelime)
+
+────────────────────────────────────────
+📊 ADIM 6: Kaynak Doğrulama
+────────────────────────────────────────
+
+[citation_verify] Kaynak doğrulaması başlatıldı: 5,820 karakter, 5 kaynak
+[citation_verify] Kaynak doğrulama tamamlandı: %82 kapsama
+
+═══════════════════════════════════════════════════
+  Kaynak Doğrulama Raporu
+═══════════════════════════════════════════════════
+  Kapsama Puanı:     %82 (Yüksek)
+  Toplam İddia:      22
+  Doğrulanan:        18
+  Doğrulanmayan:     4
+  Kullanılan Kaynak: 5
+───────────────────────────────────────────────────
+  Kaynak Kullanımı:
+    Yapay Zeka Ajanları Rehberi        |  6 eşleşme | Kullanıldı
+    MCP Protokolü Dokümantasyonu       |  5 eşleşme | Kullanıldı
+    Çok Ajanlı Sistemler               |  4 eşleşme | Kullanıldı
+    Yansıma Kalıbı                     |  2 eşleşme | Kullanıldı
+    AI Ajan Değerlendirmesi            |  1 eşleşme | Kullanıldı
+═══════════════════════════════════════════════════
+
+────────────────────────────────────────
+📊 ADIM 7: Sonuç Raporu
+────────────────────────────────────────
+
+═══════════════════════════════════════════════════
+  TwinGraph Studio - Maliyet Raporu
+═══════════════════════════════════════════════════
+  Toplam Maliyet:     $0.050141
+  Toplam Çağrı:       7
+  Toplam Input Token:  6,300
+  Toplam Output Token: 6,400
+  Toplam Token:        12,700
+  Ort. Maliyet/Çağrı: $0.007163
+───────────────────────────────────────────────────
+  Ajan Bazında Maliyet:
+    writing_agent      | $0.048250 |   2 çağrı | %96.2
+    research_agent     | $0.000683 |   1 çağrı | %1.4
+    reflection_agent   | $0.000848 |   2 çağrı | %1.7
+    repurpose_agent    | $0.000360 |   1 çağrı | %0.7
+───────────────────────────────────────────────────
+  Model Bazında Maliyet:
+    gpt-4o             | $0.048250 |   2 çağrı | standart
+    gpt-4o-mini        | $0.001891 |   5 çağrı | ekonomik
+═══════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════
+🎉 Pipeline tamamlandı!
+   Konu:           Agentic AI ve MCP
+   Süre:           4.32s
+   Taslak sayısı:  2
+   Reflection:     2 döngü (6.1 → 7.8)
+   Son Puan:       7.8/10 (B)
+   Toplam Token:   12,700
+   Toplam Maliyet: $0.050141
+   Bütçe Kullanım: %5.0
+══════════════════════════════════════════════════════════════
+
+📄 Çıktılar:
+  → expected_outputs/medium_article.md  (1,480 kelime)
+  → expected_outputs/linkedin_post.txt  (280 kelime)
+  → run_report.json                     (detaylı rapor)
+
+═══════════════════════════════════════════════════
+  Production Metrikleri
+═══════════════════════════════════════════════════
+  Writing Coherence:    7.8/10    ✅ (hedef: ≥ 7)
+  Citation Coverage:    %82       ✅ (hedef: ≥ %80)
+  Token Efficiency:     0.35      ✅ (hedef: ≥ 0.3)
+  Reflection Delta:     +28%      ✅ (hedef: ≥ +15%)
+  Tool Success Rate:    %100      ✅ (hedef: ≥ %95)
+  Pipeline Latency:     4.32s     ✅ (hedef: < 60s)
+═══════════════════════════════════════════════════
+
+✅ Tüm production kriterleri karşılandı!

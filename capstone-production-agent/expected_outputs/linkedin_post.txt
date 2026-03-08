@@ -1,0 +1,25 @@
+Yapay zeka artık sadece soru-cevap yapmıyor.
+
+Yeni nesil AI ajanları kendi başlarına araştırma yapıyor, içerik üretiyor, hatta kendi çıktılarını eleştirip iyileştiriyor. 🤖
+
+Geçtiğimiz haftalarda "Agentic AI" kavramını derinlemesine inceledim ve bir çok ajanlı sistem kurdum. İşte öğrendiklerim:
+
+🔹 Agent Döngüsü her şeyin temeli
+AI ajanları "Düşün → Harekete Geç → Gözlemle" döngüsünde çalışır. ReAct kalıbı sayesinde çok adımlı görevleri otonom olarak tamamlayabiliyor. Tek bir komutla: araştırma, yazım, eleştiri ve dönüştürme — hepsi otomatik.
+
+🔹 MCP protokolü oyunun kurallarını değiştiriyor
+Anthropic'in geliştirdiği Model Context Protocol (MCP), LLM'lerin araçlara erişimini standartlaştırıyor. USB-C fiziksel cihazlar için ne ise, MCP dijital araçlar için o. Bir kez yazılan araç, herhangi bir MCP uyumlu agent tarafından kullanılabiliyor.
+
+🔹 Reflection kalıbı kaliteyi katlamak için şart
+İlk taslak genelde %60-70 kalitede oluyor. Ama bir reflection döngüsü ile agent kendi çıktısını eleştirip iyileştirdiğinde, bu oran %85-90'a çıkabiliyor. Öz-değerlendirme, sadece insanlar için değil AI için de işe yarıyor.
+
+🔹 Akıllı model yönlendirme maliyeti %60-70 düşürüyor
+Her görev aynı modeli gerektirmiyor. Araştırma ve planlama için ucuz model (gpt-4o-mini), final yazım için güçlü model (gpt-4o) kullanarak aynı kalitede çok daha düşük maliyetle sonuç almak mümkün.
+
+Bu deneyimlerimi bir Medium makalesinde detaylı olarak anlattım. Makalede agent mimarisi, MCP araç tanımları, reflection döngüsü ve maliyet optimizasyonu konularını kod örnekleriyle birlikte inceledim.
+
+Production-grade bir AI agent sistemi kurmak istiyorsanız, bu yazı iyi bir başlangıç noktası olabilir.
+
+Siz de AI agent'lar ile neler yapıyorsunuz? Deneyimlerinizi yorumlarda paylaşın, birlikte öğrenelim. 👇
+
+#AgenticAI #MCP #YapayZeka #ArtificialIntelligence #LLM #AIAgents #MultiAgent #PromptEngineering #TechTurkiye
